@@ -1,0 +1,29 @@
+{
+    "name": "vingle/flarum-like-share-facebook",
+    "description": "Include like and share facebook button.",
+    "keywords": ["like", "share", "facebook" ],
+    "type": "flarum-extension",
+    "version": "0.1.0-beta.1",
+    "authors": [{
+        "name": "Binh Duong",
+        "email": "binh.duong@vingle.net"
+    }],
+    "require": {
+        "flarum/core": "^0.1.0-beta.3"
+    },
+    "extra": {
+        "flarum-extension": {
+            "title": "_ Like & Share Facebook",
+            "icon": {
+                "name": "facebook-square",
+                "backgroundColor": "#000", 
+                "color": "#FF0"
+            }
+        }
+    },
+        "autoload": {
+            "psr-4": {
+                "Vingle\\Like\\Share\\Facebook\\": "src/"
+            }
+        }
+    }
